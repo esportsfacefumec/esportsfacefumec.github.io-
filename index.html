@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>E-Sports da FACE/FUMEC</title>
+<title>E-Sports FACE/FUMEC</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -33,6 +33,42 @@ body, html {
 .a {text-shadow:1px 1px;}
 
 .mySlides {display:none}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
 
 </style>
 </head>
@@ -69,23 +105,24 @@ body, html {
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
   <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPE</a>
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTATO</a>
+  
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Equipe Oficial de E-Sports da Universidade FUMEC</span><br>
-    <span class="w3-large">\em busca dos msid altos padrões de competitividade nos E-Sports</span>
+    <span class="w3-jumbo w3-hide-small">Equipe Oficial de E-Sports da Universidade FUMECX</span><br>
+    <p class="w3-large">Em busca dos mais altos padrões de competitividade nos E-Sports desde 2016</p>
+	
    <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p> -->
   </div> 
-  <div class="w3-display-bottomleft w3-text-white w3-xxlarge" style="padding:24px 48px">
+  <div class="w3-display-bottomright w3-text-white w3-xxlarge" style="padding:24px 48px">
     
-	<a href="https://www.youtube.com/@e-sportsfumec/featured" class="fa fa-youtube w3-hover-opacity"></a>
-	<a href="https://www.youtube.com/@e-sportsfumec/featured" class="fa fa-facebook w3-hover-opacity"></a>
-    <a href="https://www.instagram.com/esportsfacefumec" class="fa fa-instagram w3-hover-opacity"></a>
-    <a href="https://twitter.com/esportsfumec" class="fa fa-twitch w3-hover-opacity"></a>
+	<a href="https://www.youtube.com/@e-sportsfumec/featured" class="fa fa-youtube w3-red w3-hover-opacity" target="_blank"></a>
+	<a href="https://www.youtube.com/@e-sportsfumec/featured" class="fa fa-facebook w3-blue w3-hover-opacity" target="_blank"></a>
+    <a href="https://www.instagram.com/esportsfacefumec" class="fa fa-instagram w3-pink w3-hover-opacity"target="_blank"></a>
+    <a href="https://www.twitch.tv/esportsfacefumec" class="fa fa-twitch w3-purple w3-hover-opacity"target="_blank"></a>
+	<a href="https://twitter.com/esportsfumec" class="fa fa-twitter w3-cyan w3-hover-opacity"target="_blank"></a>
 	
   </div>
 </header>
@@ -94,7 +131,7 @@ body, html {
 <hr>
 <div class="w3-container" style="padding:0px 16px" id="about">
   <h3 class="w3-center w3-light-grey">SOBRE A BRAIN TEAM</h3>
-  <p class="w3-center w3-large">Principais características da nossa equipe</p>
+  <p class="w3-center w3-large">Principais características da nossa equipe</p><hr>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <i class="fa fa-universal-access w3-margin-bottom w3-jumbo w3-center"></i>
@@ -110,18 +147,28 @@ body, html {
       <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Habilidade</p>
       <p>Estamos sempre evoluindo e estudando para atingir os mais altos padrões.</p>
+	   <p>Utilizamos ferramentas analíticas para analisar e propor alternativas em nossas partidas.</p>
     </div>
     <div class="w3-quarter">
       <i class="fa  fa-graduation-cap w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Treinamento</p>
       <p>A Brain Team treina incansavelmente para vencer!</p>
+	  <p>Realizamos <i>streamings</i> toda semana, no período da tarde. Entre em nosso canal da Twitch TV para companhar!</p>
     </div>
+	
+
   </div>
+	<hr><p class="w3-center w3-large">Principais participações em Campeonatos</p><hr>
+	<a href=" https://www.vempralue.com.br/"><img src="LUE-LigaUniversitaria_SUmmer.jpg" style="height:45px;float: left;" target="_blank" alt="logo_lue"></a> <p class="w3-large">LUE Summer Cup 2017 - Liga Universitária de e-Sports 2017 ( 1º Lugar)</p> 
+	<a href=" https://brasil.campus-party.org/"><img src="campus-party.jpg" style="height:45px;float: left;" target="_blank" alt="logo_campusparty"></a> <p class="w3-large">Desafio Campus Party Belo Horizonte 2016 ( 3º Lugar)</p>
+	<a href=" https://www.youtube.com/@tuesgg"><img src="TUES.jpg" style="height:45px;float: left;" target="_blank" alt="logo_campusparty"></a> <p class="w3-large">TUES - Torneio Universitário de e-Sports 2017 ( 5º Lugar)</p>
+	
 </div>
 
 
 <!--Videos section -->
 <hr>
+
 <div class="w3-container">
   <h2 class="w3-center w3-light-grey" >SHORTS do 1º Campeonato de League of Legends da FACE/FUMEC de 2023</h2>
   
@@ -152,7 +199,7 @@ body, html {
 <div class="w3-container" style="padding:32px 16px;" id="team">
 <hr>
   <h3 class="w3-center w3-light-grey" style="color:white">A EQUIPE DE E-ATLETAS</h3>
-  <p class="w3-center w3-light-grey w3-large">Um por todos e todos por um!</p>
+  <hr><p class="w3-center w3-light w3-large">Um por todos e todos por um!</p><hr>
   <div class="w3-row-padding w3-black" style="margin-top:16px">
     
 	<div class="w3-col m4 w3-center">
@@ -228,54 +275,99 @@ body, html {
 
 <!-- Coordination Section -->
 <div class="w3-container" style="padding:32px 16px" id="team">
-  <h3 class="w3-center w3-border w3-padding">COORDENAÇÃO GERAL</h3>
-  <p class="w3-center w3-large">Trabalhamos para formar uma equipe vencedora!</p>
+  <h3 class="w3-center w3-light-grey w3-padding">COORDENAÇÃO GERAL</h3>
+  <hr><p class="w3-center w3-light w3-large">Trabalhamos para formar uma equipe vencedora!</p><hr>
 	<div class="w3-container" style="padding:16px 16px" id="team">
 	  <div class="w3-row-padding w3-grayscale" style="margin-top:32px">
-		<div class="w3-col w3-container w3-border w3-padding m4 l3">
+		
+		<div class="w3-col w3-container w3-border w3-padding">
+			
 			<div class="w3-card">
 			<img src="ProfaRenata.jpg" alt="Renata" style="width:64px">
+				
 				<div class="w3-container">
 				<h3>Profa.Dra. Renata de Sousa da Silva Tolentino</h3>
-				  <p class="w3-opacity">Diretora da Faculdade de Ciências Empresarias (2020- 2023) e Coordenadora Geral do E-Sports</p>
-				  <p>Doutora em Administração, Conselheira Executiva da FUMEC, Diretora, Pesquisadora e Professora</p>
-				  <p><button class="w3-button w3-light-grey w3-hover-red w3-block" href="https://www.op.gg/summoners/br/Danas"><i class="fa fa-envelope"></i> Contato</button></p>
+				  <p class="w3-opacity">Diretora da Faculdade de Ciências Empresarias (2020- 2023, Professora Titular dos cursos Bacharelado em Ciência da Computação e Tecnológico em Gestão da Tecnologia da Informação,) e Coordenadora Geral do E-Sports</p>
+				  
+				  <button type="button" class="collapsible">Ver detalhes</button>
+					<div class="content">
+						<p>Doutora em Administração pela Universidade FUMEC(2017), MBA em Finanças Corporativas e Controladoria pela FUMEC(2021), Mestra em Administração pela Universidade FUMEC (2006), especialista em Metodologia do Ensino Superior pelo Centro Universitário Newton de Paiva (2004), especialista em Redes de Computadores e Telecomunicação pela Universidade FUMEC (2003) graduação em Ciência da Computação pela Universidade FUMEC (2002), graduação em Superior de Tecnologia em Processamento de Dados pela Universidade FUMEC (2001). Tem experiência na área de Ciência da Computação, com ênfase em Redes de Computadores, atuando principalmente nos seguintes temas: Tecnologia da Informação no setor de saúde, Educação, Sistemas de Informação, Infraestrutura de Rede e Gerência de Telecomunicação. Tem experiência em docência do ensino superior presencial e a distância (EaD), lecionando em cursos de graduação e pós-graduação. Além de atuar como coordenadora de cursos de Sistemas de Informação (2010-2017) e Redes de Computadores (2010-2014), atualmente exerce a função de Diretora da Faculdade de Ciências Empresarias (2020- 2023), já exerceu a função de Diretora de Ensino da Faculdade de Ciências Empresariais da Universidade FUMEC(2016-2019). É Avaliadora do INEP/MEC para atos de credenciamento institucional presencial e EaD e colaboradora do BNI/MEC (Banco Nacional de Itens) para elaboração e revisão de itens do ENADE( Exame Nacional de Desempenho de Estudantes). Pesquisadora acadêmica em Marketing, Ética, Empreendedorismo e Transformação Digital. Possui artigos acadêmicos publicados na área de Administração sobre Educação, Empreendedorismo, Ética, Transformação Digital, Sistemas de Informação e Gestão do Conhecimento e Tecnologia em Marketing. Linha de Pesquisa: Educação, Estratégia e Tecnologia em Marketing, Empreendedorismo, Transformação Digital e Sistemas de Informação e Gestão do Conhecimento.</p>
+						<p><a  href="http://lattes.cnpq.br/2059721547043120" target="blank"> <button class="w3-button w3-light-grey w3-hover-red w3-block"><i class="fa fa-file"></i> Lattes</button></a></p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="w3-col w3-container w3-border w3-padding">
+			<div class="w3-card">
+			<img src="JoaoVitorBoechat.jpg" alt="JoaoVitorBoechat" style="width:64px">
+				<div class="w3-container">
+				<h3>Prof.Dr. João Vítor Boechat Gomide</h3>
+				  <p class="w3-opacity"> Coordena o laboratório de captura de movimento para animação (MoCapLab). Coordenou o desenvolvimento do primeiro software livre no mundo de captura de movimento para animação (OpenMoCap).Coordena o Bacharelado em Computação Gráfica e o Curso Superior de Tecnologia em Jogos Digitais e é professor e orientador do Programa de Mestrado e Doutorado em Sistemas de Informação e Gestão do Conhecimento e do Mestrado em Estudos Culturais Contemporâneos da Universidade FUMEC.</p>
+				  
+				  <button type="button" class="collapsible">Ver detalhes</button>
+					<div class="content">
+						<p>Doutor em Artes pela UFMG e Doutor em Física pela UNICAMP, com um período na Università di Pisa, na Itália. Desde 1996 trabalha intensamente com a produção audiovisual e, até 2006, atuou exclusivamente neste mercado de trabalho, se afastando temporariamente das atividades acadêmicas. Realiza trabalhos e pesquisas em desenvolvimento de jogos digitais, narrativas para os meios digitais, cinema e televisão incluídos, edição e computação gráfica de produtos audiovisuais - como supervisor de efeitos visuais para a TV Globo, no Rio de Janeiro, de 2000 a 2005, na montagem de longa-metragem e na edição e finalização de comerciais para publicidade e televisão, vários premiados -, na supervisão de pós-produção de programas educacionais e institucionais em diversas produtoras de conteúdo e emissoras de televisão, e outros projetos na área. Desde o retorno à vida acadêmica, coordenou o desenvolvimento de diversos aplicativos e produtos que utilizam a inteligência artificial e a visão computacional, com registros de software e patentes de produtos. Coordenou o desenvolvimento do primeiro software livre no mundo de captura de movimento para animação (OpenMoCap), finalista do Prêmio Santander Ciência e Inovação de 2012. Coordena o Laboratório de Captura de Movimento para Animação (MoCapLab), que produziu os primeiros jogos digitais brasileiros com essa técnica, desde 2009. É autor do livro Imagem Digital Aplicada, pela Editora Campus/Elsevier, lançado em 2014. Coordena os Bacharelados em Computação Gráfica e em Game Design e é professor e orientador do Programa de Pós-Graduação em Sistemas de Informação e Gestão do Conhecimento, da Universidade FUMEC. Foi coordenador do Mestrado em Estudos Culturais Contemporâneos da Universidade FUMEC, de 2014 a 2016. É bolsista do Programa Pesquisador Mineiro da FAPEMIG.</p>
+						<p><a href="http://lattes.cnpq.br/7442068334410248" target="blank"><button class="w3-button w3-light-grey w3-hover-red w3-block" ><i class="fa fa-file"></i> Lattes</button></a></p>
+					</div>
+					
 				</div>
 			</div>
 		</div>
-			<div class="w3-col w3-container w3-border w3-padding m4 l3">
+		
+			<div class="w3-col w3-container w3-border w3-padding">
 			  <div class="w3-card">
-				<img src="ProfMarcos.jpg" alt="Marcos" style="width:64px">
+				<img src="marcos-andr-penna-coutinho_orig.gif" alt="Marcos" style="width:64px">
 				<div class="w3-container">
 				 <h3>Prof.Dr. Marcos André Penna Coutinho</h3>
-					<p class="w3-opacity">Coordenador do E-Sports</p>
-					<p>Professor nos cursos de Tecnólogo em Jogos Digitais, Graduação em Game Design e Graduação em Computação Gráfica.</p>
-					<p><button class="w3-button w3-light-grey w3-hover-red w3-block"><i class="fa fa-envelope"></i> Contato</button></p>
+					<p class="w3-opacity">Coordenador do E-Sports e Professor nos cursos de Tecnólogo em Jogos Digitais, Graduação em Game Design e Graduação em Computação Gráfica.</p>
+					
+					<button type="button" class="collapsible">Ver detalhes</button>
+					<div class="content">
+					<p>Doutorado (agosto/2017) em arte e Tecnologia da Imagem, mestrado( junho/2011) em Cinema, e Graduação (2003) em Cinema, pela UFMG e Comunicação Social (2000) pela PUC-Minas. Professor na FUMEC-BH nos cursos de Tecnólogo em Jogos Digitais, Bacharelado em Game Design, e Computação Gráfica. Ministra aulas de TCC, atuando como coorientador de projetos em game, animação, video. Participou como pesquisador com dedicação exclusiva no Laboratório de Artes Digitais da EBA-UFMG tendo participado em projetos importantes como: Teogonia; Utilização de câmeras 3D para animação de personagens de recorte; Museu PONTO UFMG e Espaço interativo de Ciências da Vida do Museu Horto UFMG. Sua Linha de Pesquisa preza pela metodologia de inter/transdisciplinaridades nas Artes/Ciências, envolvendo: Cibernética, Filosofia, Alquimia digital, Jogos Digitais e Analógicos, Tecnologia / Simbolismos/ Matemática/ Magia/ Linguistica computacional, Arte computacional - arte Generativa,arte procedural, animação digital 2D e 3D.Possui atuação no mercado de Jogos Digitais como desenvolvedor generalista.</p>
+					<p><a href="http://lattes.cnpq.br/4487338908310550"target="blank"><button class="w3-button w3-light-grey w3-hover-red w3-block"><i class="fa fa-file"></i> Lattes</button></a></p>
+					</div>
+					
 				</div>
 			  </div>
 			</div>
-			<div class="w3-col w3-container w3-border w3-padding m4 l3 ">
+			
+			<div class="w3-col w3-container w3-border w3-padding">
 			  <div class="w3-card">
-				<img src="ProfMarcos.jpg" alt="Marcos" style="width:64px">
+				<img src="AirRabelo.gif" alt="AirRabelo" style="width:64px">
 				<div class="w3-container">
 				 <h3>Prof.Dr. Air Rabelo</h3>
-					<p class="w3-opacity">Coordenador dos cursos Bacharelado em Ciência da Computação e Tecnológico em Gestão da Tecnologia da Informação</p>
-					<p>Professor Titular dos cursos Bacharelado em Ciência da Computação e Tecnológico em Gestão da Tecnologia da Informação</p>
-					<p><button class="w3-button w3-light-grey  w3-hover-red w3-block"><i class="fa fa-envelope"></i> Contato</button></p>
+					<p class="w3-opacity">Coordenador dos cursos Bacharelado em Ciência da Computação e Tecnológico em Gestão da Tecnologia da Informação, Professor Titular dos cursos Bacharelado em Ciência da Computação e Tecnológico em Gestão da Tecnologia da Informação</p>
+					
+					<button type="button" class="collapsible">Ver detalhes</button>
+					<div class="content">
+					<p>Doutor em Sistemas de Informação e Gestão do Conhecimento pela Universidade FUMEC (2020), Mestre em Engenharia de Produção pela Universidade Federal de Santa Catarina (2001), MBA em Finanças Corporativas e Controladoria pela Universidade FUMEC (2011), especialização em Gestão da Tecnologia da Informação pela Universidade FUMEC (1996) e graduação em Superior de Tecnologia em Processamento de Dados pela Universidade FUMEC (1991). Presidente Executivo da FUMEC e Conselheiro do Conselho de Curadores da FUMEC. Professor Titular e Coordenador dos cursos Bacharelado em Ciência da Computação e Tecnológico em Gestão da Tecnologia da Informação na Universidade FUMEC. Tem experiência profissional em Tecnologia da Informação, Gestão e Governança Corporativa. Na área de Tecnologia da Informação atuou em Desenvolvimento de Sistemas, Gestão de Redes, Administração de Banco de Dados e Gerência de TI.</p>
+					<p><a href="http://lattes.cnpq.br/5642811185402139" target="blank"><button class="w3-button w3-light-grey  w3-hover-red w3-block"><i class="fa fa-file"></i> Lattes</button></a></p>
+					</div>
+					
 				</div>
 			  </div>
 			</div>
-			<div class="w3-col w3-container w3-border w3-padding m4 l3">
+			
+			<div class="w3-col w3-container w3-border w3-padding">
 			  <div class="w3-card">
-				<img src="ProfMarcos.jpg" alt="Marcos" style="width:64px">
+				<img src="Becsom.gif" alt="Becsom" style="width:64px">
 				<div class="w3-container">
 				 <h3>Prof. Me. Becsom Salles de Carvalho</h3>
-					<p class="w3-opacity">Coordenador dos Cursos de Ciência da Computação e Gestão da Tecnologia da Informação (TGTI)</p>
-					<p>Professor titular dos Cursos de Ciência da Computação e Gestão da Tecnologia da Informação (TGTI)</p>
-					<p><button class="w3-button w3-light-grey w3-hover-red  w3-block"><i class="fa fa-envelope"></i> Contato</button></p>
+					<p class="w3-opacity">Coordenador dos Cursos de Ciência da Computação e Gestão da Tecnologia da Informação (TGTI), Professor titular dos Cursos de Ciência da Computação e Gestão da Tecnologia da Informação (TGTI)</p>
+					
+					<button type="button" class="collapsible">Ver detalhes</button>
+					<div class="content">
+					<p>Possui graduação em Engenharia Civil pela Fundação Mineira de Educação e Cultura - FUMEC (1991), graduação em Superior Em Tecnologia de Processamento de Dados pela Fundação Mineira de Educação e Cultura - FUMEC (1992), pós-graduação em Gerência da Tecnologia da Informação pela Fundação Mineira de Educação e Cultura - FUMEC, pós-graduação em Gerência de Telecomunicações pelo Instituto de Educação Tecnológica IETEC e mestrado em Tecnologia pelo Centro Federal de Educação Tecnológica de Minas Gerais. Já atuou como gerente das Divisões de Gestão de Atendimento ao usuário de Informação, Telecomunicações, Gestão da Tecnologia da Informação e atualmente é gerente da Divisão de Produção e Suporte da Companhia de Saneamento de Minas Gerais (COPASA MG). Tem experiência de mais de trinta anos atuando no mercado de TI e também como coordenador e professor de cursos de computação de Instituições de Ensino. Atualmente é professor titular e Coordenador dos Cursos de Ciência da Computação e Gestão da Tecnologia da Informação (TGTI) da Fundação Mineira de Educação e Cultura - FUMEC. Tem experiência na área de Ciência da Computação, com ênfase em Software Básico, Arquitetura de Computadores, Segurança da informação, Redes de Computadores, Conectividade, gestão de projetos de TI e gestão de Data Centers. Autor do livro "Introdução ao Gerenciamento de Ambientes Computacionais".</p>
+					<p><a href="http://lattes.cnpq.br/5269765694053560" target="blank"><button class="w3-button w3-light-grey w3-hover-red  w3-block"><i class="fa fa-file"></i> Lattes</button></a></p>
+					</div>
+					
 				</div>
 			  </div>
 			</div>
+			
 		</div>		
 	</div>
 	  
@@ -363,7 +455,7 @@ body, html {
       </div>
       <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Streamings</p>
       <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">2X por semana</div>
       </div>
       <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Campeonatos</p>
       <div class="w3-grey">
@@ -449,7 +541,7 @@ body, html {
           <i class="fa fa-paper-plane"></i> MANDAR MESSAGEM
         </button>
       </p>
-    </form>
+   <!--  </form>
 	<form action="mailto:esportsfacefumec@gmail.com" method="post" enctype="text/plain">
 		Name:<br>
 		<input type="text" name="name"><br>
@@ -459,7 +551,7 @@ body, html {
 		<input type="text" name="comment" size="50"><br><br>
 		<input type="submit" value="Send">
 		<input type="reset" value="Reset">
-	</form>
+	</form> -->
 	
   </div>
 </div>
@@ -535,6 +627,22 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-red";
+}
+
+//colapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
 }
 //google maps
 
