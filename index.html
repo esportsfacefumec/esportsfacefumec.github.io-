@@ -70,6 +70,23 @@ body, html {
   background-color: #f1f1f1;
 }
 
+/*Video Container*/
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  
+  padding:4%;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 </style>
 </head>
 <body>
@@ -78,14 +95,17 @@ body, html {
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     
-	<img src="FUMEC-logo-small.png" style="height:60px;float: right;" alt="logo_fumec"> 
-	<img src="FUMEC_E_Sports_LOGO.png" style="height:60px;float: left;" alt="logo_esportsfumec"> 
+	<img src="FUMEC-logo-small.png" style="height:120px;float: right;" alt="logo_fumec"> 
+	<img src="FUMEC_E_Sports_LOGO.png" style="height:120px;float: left;" alt="logo_esportsfumec"> 
 	
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EQUIPE</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#about" class="w3-bar-item w3-button" style="font-size: max(min(2vw,1em)"><i class="fa fa-users"></i>SOBRE A BRAIN TEAM</a>
+      <a href="#team" class="w3-bar-item w3-button" style="font-size: max(min(2vw,1em)"><i class="fa fa-user"></i> EQUIPE</a>
+	   <a href="#estatisticas" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-bar-chart"></i> ESTATISTICAS</a>
+	  <a href="#corpo" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="	fa fa-graduation-cap"></i> CORPO ACADÊMICO</a>
+	  <a href="#videos" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-file-video-o"></i> VÍDEOS</a>
+      <a href="#work" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-th"></i> WORK</a>
       <!-- 
 	  <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTATO</a>-->
@@ -102,16 +122,19 @@ body, html {
 
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPE</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#about" class="w3-bar-item w3-button" style="font-size: max(min(2vw,1em)"><i class="fa fa-users"></i>SOBRE A BRAIN TEAM</a>
+      <a href="#team" class="w3-bar-item w3-button" style="font-size: max(min(2vw,1em)"><i class="fa fa-user"></i> EQUIPE</a>
+	   <a href="#estatisticas" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-bar-chart"></i> ESTATISTICAS</a>
+	  <a href="#corpo" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="	fa fa-graduation-cap"></i> CORPO ACADÊMICO</a>
+	  <a href="#videos" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-file-video-o"></i> VÍDEOS</a>
+      <a href="#work" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-th"></i> WORK</a>
   
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Equipe Oficial de E-Sports da Universidade FUMECX</span><br>
+    <span style="font-size: max(min(4vw, 4em)" >Equipe Oficial de E-Sports da Universidade FUMEC</span><br>
     <p class="w3-large">Em busca dos mais altos padrões de competitividade nos E-Sports desde 2016</p>
 	
    <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p> -->
@@ -158,31 +181,70 @@ body, html {
 	
 
   </div>
-	<hr><p class="w3-center w3-large">Principais participações em Campeonatos</p><hr>
+	<hr>
+	<p class="w3-center w3-large">Principais participações em Campeonatos</p><hr>
 	<a href=" https://www.vempralue.com.br/"><img src="LUE-LigaUniversitaria_SUmmer.jpg" style="height:60px;float: left;" target="_blank" alt="logo_lue"></a> <p class="w3-large">LUE Summer Cup 2017 - Liga Universitária de e-Sports 2017 ( 1º Lugar) <img src="1Place.png" style="height:60px;float: center;" target="_blank" alt="1place"></p>
 	<a href=" https://brasil.campus-party.org/"><img src="campus-party.jpg" style="height:60px;float: left;" target="_blank" alt="logo_campusparty"></a> <p class="w3-large">Desafio Campus Party Belo Horizonte 2016 ( 3º Lugar)<img src="3Place.png" style="height:60px;float: center;" target="_blank" alt="1place"> </p>
 	<a href=" https://www.youtube.com/@tuesgg"><img src="TUES.jpg" style="height:60px;float: left;" target="_blank" alt="logo_campusparty"></a> <p class="w3-large">TUES - Torneio Universitário de e-Sports 2017 ( 5º Lugar)</p>
 	
 </div>
 
+<!-- Promo Section "Statistics" -->
+<hr>
+<div class="w3-container w3-row w3-center w3-padding-8" id="estatisticas">
+  <h3 class="w3-center w3-light-grey">ESTATISTICAS DA BRAIN TEAM</h3>
+  <p class="w3-center w3-large">Mapeamento da Eficiência da Equipe</p><hr>
+   
+</div>
+<!-- Skills Section -->
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Nossas habilidades</h3>
+      <p>Podcasts com dicas de jogadas brutais!<br>
+      Streaming de partidas todas as semanas...</p>
+      <p>Estamos presentes, prontos e atuantes.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Média de Win Rate</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:50,5%">50,5%</div>
+      </div>
+      
+	  <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Participação em Kills</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:54,8%">54,8%</div>
+      </div>
+	  
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Aproveitamento em Campeonatos</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:50%">50%</div>
+      </div>
+    </div>
+  </div>
 
 <!--Videos section -->
 <hr>
 
-<div class="w3-container">
-  <h2 class="w3-center w3-light-grey" >SHORTS do 1º Campeonato de League of Legends da FACE/FUMEC de 2023</h2>
+<div class="w3-container" id="videos">
+
+  <h2 class="w3-center w3-light-grey" >Vídeos do E-Sports da FACE/FUMEC</h2>
+  <!--<h2 class="w3-center w3-light-grey" >SHORTS do 1º Campeonato de League of Legends da FACE/FUMEC de 2023</h2>-->
   
 </div>
+	<div class="container"> 
 	
-		<div class="w3-content" style="max-width:80%">
-		<center>
-			<iframe width="560" height="315" class="mySlides" src="https://www.youtube.com/embed/Tm8s1afBqX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe> 
-			<iframe width="560" height="315" class="mySlides" src="https://www.youtube.com/embed/q_rdyWPPNfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
-			<iframe width="560" height="315" class="mySlides"src="https://www.youtube.com/embed/m2ddfxVL8jU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
-			<iframe width="560" height="315" class="mySlides" src="https://www.youtube.com/embed/rxyCWjLCEyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-		</center>	
+		<div class="videoWrapper">
+			<center>
+				<iframe width="560" height="315"  class="mySlides" src="https://www.youtube.com/embed/PFtTo-Uwaec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
+				<iframe width="560" height="315" class="mySlides" src="https://www.youtube.com/embed/ZIZfWG85q1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
+				<iframe width="560" height="315" class="mySlides" src="https://www.youtube.com/embed/Tm8s1afBqX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe> 
+				<iframe width="560" height="315" class="mySlides" src="https://www.youtube.com/embed/q_rdyWPPNfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
+				<iframe width="560" height="315" class="mySlides" src="https://www.youtube.com/embed/m2ddfxVL8jU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen"></iframe>
+				<iframe width="560" height="315" class="mySlides" src="https://www.youtube.com/embed/rxyCWjLCEyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscree"></iframe>
+			</center>	
 		</div>
-	
+	</div>
 <div class="w3-center">
   <div class="w3-section">
     <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
@@ -192,6 +254,8 @@ body, html {
   <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
   <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
   <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+  <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+   <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
 </div>
 
 
@@ -263,7 +327,7 @@ body, html {
           <p>Aluno de Jogos Digitais. Mantêm a moral da equipe! Campeão do "1ºCampeonato de League of Legends da FACE/FUMEC 2023"</p>
 			<font face = "Arial" size = "8" color = "red">Active</font><br />
           <img src="LOL-RANKED.png" alt="Marcos" style="width:20%">
-		  <a href="https://www.op.gg/summoners/br/Danas" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
+		  <a href="https://www.op.gg/summoners/br/Banana%20Segredin" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
 		  </div>
         </div>
       </div>
@@ -274,7 +338,7 @@ body, html {
 </div>
 
 <!-- Coordination Section -->
-<div class="w3-container" style="padding:32px 16px" id="team">
+<div class="w3-container" style="padding:32px 16px" id="corpo">
   <h3 class="w3-center w3-light-grey w3-padding">COORDENAÇÃO GERAL</h3>
   <hr><p class="w3-center w3-light w3-large">Trabalhamos para formar uma equipe vencedora!</p><hr>
 	<div class="w3-container" style="padding:16px 16px" id="team">
@@ -283,7 +347,7 @@ body, html {
 		<div class="w3-col w3-container w3-border w3-padding">
 			
 			<div class="w3-card">
-			<img src="ProfaRenata.jpg" alt="Renata" style="width:64px">
+			<img src="ProfaRenata.jpg" alt="Renata" style="width:25%; padding:16px 16px">
 				
 				<div class="w3-container">
 				<h3>Profa.Dra. Renata de Sousa da Silva Tolentino</h3>
@@ -302,7 +366,7 @@ body, html {
 		
 		<div class="w3-col w3-container w3-border w3-padding">
 			<div class="w3-card">
-			<img src="JoaoVitorBoechat.jpg" alt="JoaoVitorBoechat" style="width:64px">
+			<img src="JoaoVitorBoechat.jpg" alt="JoaoVitorBoechat" style="width:25%; padding:16px 16px">
 				<div class="w3-container">
 				<h3>Prof.Dr. João Vítor Boechat Gomide</h3>
 				  <p class="w3-opacity"> Coordena o laboratório de captura de movimento para animação (MoCapLab). Coordenou o desenvolvimento do primeiro software livre no mundo de captura de movimento para animação (OpenMoCap).Coordena o Bacharelado em Computação Gráfica e o Curso Superior de Tecnologia em Jogos Digitais e é professor e orientador do Programa de Mestrado e Doutorado em Sistemas de Informação e Gestão do Conhecimento e do Mestrado em Estudos Culturais Contemporâneos da Universidade FUMEC.</p>
@@ -319,14 +383,14 @@ body, html {
 		
 			<div class="w3-col w3-container w3-border w3-padding">
 			  <div class="w3-card">
-				<img src="marcos-andr-penna-coutinho_orig.gif" alt="Marcos" style="width:64px">
+				<img src="marcos-andr-penna-coutinho_orig.gif" alt="Marcos" style="width:25%; padding:16px 16px">
 				<div class="w3-container">
 				 <h3>Prof.Dr. Marcos André Penna Coutinho</h3>
 					<p class="w3-opacity">Coordenador do E-Sports e Professor nos cursos de Tecnólogo em Jogos Digitais, Graduação em Game Design e Graduação em Computação Gráfica.</p>
 					
 					<button type="button" class="collapsible">Ver detalhes</button>
 					<div class="content">
-					<p>Doutorado (agosto/2017) em arte e Tecnologia da Imagem, mestrado( junho/2011) em Cinema, e Graduação (2003) em Cinema, pela UFMG e Comunicação Social (2000) pela PUC-Minas. Professor na FUMEC-BH nos cursos de Tecnólogo em Jogos Digitais, Bacharelado em Game Design, e Computação Gráfica. Ministra aulas de TCC, atuando como coorientador de projetos em game, animação, video. Participou como pesquisador com dedicação exclusiva no Laboratório de Artes Digitais da EBA-UFMG tendo participado em projetos importantes como: Teogonia; Utilização de câmeras 3D para animação de personagens de recorte; Museu PONTO UFMG e Espaço interativo de Ciências da Vida do Museu Horto UFMG. Sua Linha de Pesquisa preza pela metodologia de inter/transdisciplinaridades nas Artes/Ciências, envolvendo: Cibernética, Filosofia, Alquimia digital, Jogos Digitais e Analógicos, Tecnologia / Simbolismos/ Matemática/ Magia/ Linguistica computacional, Arte computacional - arte Generativa,arte procedural, animação digital 2D e 3D.Possui atuação no mercado de Jogos Digitais como desenvolvedor generalista.</p>
+					<p>Doutorado (agosto/2017) em Arte e Tecnologia da Imagem, Mestrado( junho/2011) em Cinema, e Graduação (2003) em Cinema de Animação, pela UFMG e Comunicação Social (2000) pela PUC-Minas. Professor na FUMEC-BH nos cursos de Tecnólogo em Jogos Digitais, Bacharelado em Game Design, e Computação Gráfica. Ministra aulas de TCC, atuando como coorientador de projetos em game, animação, video. Participou como pesquisador com dedicação exclusiva no Laboratório de Artes Digitais da EBA-UFMG tendo participado em projetos importantes como: Teogonia; Utilização de câmeras 3D para animação de personagens de recorte; Museu PONTO UFMG e Espaço interativo de Ciências da Vida do Museu Horto UFMG. Sua Linha de Pesquisa preza pela metodologia de inter/transdisciplinaridades nas Artes/Ciências, envolvendo: Cibernética, Filosofia, Alquimia digital, Jogos Digitais e Analógicos, Tecnologia / Simbolismos/ Matemática/ Magia/ Linguistica computacional, Arte computacional - arte Generativa,arte procedural, animação digital 2D e 3D.Possui atuação no mercado de Jogos Digitais como desenvolvedor generalista.</p>
 					<p><a href="http://lattes.cnpq.br/4487338908310550"target="blank"><button class="w3-button w3-light-grey w3-hover-red w3-block"><i class="fa fa-file"></i> Lattes</button></a></p>
 					</div>
 					
@@ -336,7 +400,7 @@ body, html {
 			
 			<div class="w3-col w3-container w3-border w3-padding">
 			  <div class="w3-card">
-				<img src="AirRabelo.gif" alt="AirRabelo" style="width:64px">
+				<img src="AirRabelo.gif" alt="AirRabelo" style="width:25%; padding:16px 16px">
 				<div class="w3-container">
 				 <h3>Prof.Dr. Air Rabelo</h3>
 					<p class="w3-opacity">Coordenador dos cursos Bacharelado em Ciência da Computação e Tecnológico em Gestão da Tecnologia da Informação, Professor Titular dos cursos Bacharelado em Ciência da Computação e Tecnológico em Gestão da Tecnologia da Informação</p>
@@ -353,7 +417,7 @@ body, html {
 			
 			<div class="w3-col w3-container w3-border w3-padding">
 			  <div class="w3-card">
-				<img src="Becsom.gif" alt="Becsom" style="width:64px">
+				<img src="Becsom.gif" alt="Becsom" style="width:25%; padding:16px 16px">
 				<div class="w3-container">
 				 <h3>Prof. Me. Becsom Salles de Carvalho</h3>
 					<p class="w3-opacity">Coordenador dos Cursos de Ciência da Computação e Gestão da Tecnologia da Informação (TGTI), Professor titular dos Cursos de Ciência da Computação e Gestão da Tecnologia da Informação (TGTI)</p>
@@ -373,25 +437,7 @@ body, html {
 	  
 </div>
 
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">325/245</span>
-    <br>Kills/Dies
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">55.000</span>
-    <br>Média de Dano por Partida
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">2</span>
-    <br>1º Colocação em Campeonatos
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">154/32</span>
-    <br>Wins/Loose
-  </div>
-</div>
+
 
 <!-- Work Section -->
 <!--
@@ -439,31 +485,7 @@ body, html {
   </div>
 </div>
 
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Nossas habilidades</h3>
-      <p>Podcasts com dicas de jogadas brutais!<br>
-      Streaming de partidas todas as semanas...</p>
-      <p>Estamos presentes, prontos e atuantes.</p>
-    </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Win Rate</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:54%">54%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Streamings</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">2X por semana</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Campeonatos</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <!-- Pricing Section -->
 <!--
