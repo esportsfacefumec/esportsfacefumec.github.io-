@@ -20,6 +20,7 @@ body, html {
 
 /* Full height image header */
 .bgimg-1 {
+	
   background-position: center;
   background-size: cover;
   background-image: url("BrainTeam.png");
@@ -27,7 +28,7 @@ body, html {
 }
 
 .w3-bar .w3-button {
-  padding: 16px;
+  padding: 4px;
 }
 
 .a {text-shadow:1px 1px;}
@@ -91,29 +92,32 @@ body, html {
 </head>
 <body>
 
+
+
+
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top ">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     
-	<img src="FUMEC-logo-small.png" style="height:120px;float: right;" alt="logo_fumec"> 
-	<img src="FUMEC_E_Sports_LOGO.png" style="height:120px;float: left;" alt="logo_esportsfumec"> 
+	<img src="FUMEC-logo-small.png" style="height:98px;float: right;" alt="logo_fumec"> 
+	<img src="FUMEC_E_Sports_LOGO.png" style="height:98px;float: left;" alt="logo_esportsfumec"> 
 	
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button" style="font-size: max(min(2vw,1em)"><i class="fa fa-users"></i>SOBRE A BRAIN TEAM</a>
-      <a href="#team" class="w3-bar-item w3-button" style="font-size: max(min(2vw,1em)"><i class="fa fa-user"></i> EQUIPE</a>
-	   <a href="#estatisticas" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-bar-chart"></i> ESTATISTICAS</a>
-	  <a href="#corpo" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="	fa fa-graduation-cap"></i> CORPO ACADÊMICO</a>
-	  <a href="#videos" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-file-video-o"></i> VÍDEOS</a>
-      <a href="#work" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-th"></i> WORK</a>
+    <!-- navbar links -->
+    <div class="w3-center w3-hide-small w3-mobile ">
+      <a href="#home" class="w3-bar-item w3-button" style="font-size: max(min(1.5vw,4em)" ><i class="fa fa-users"></i>SOBRE A BRAIN TEAM</a>
+      <a href="#team" class="w3-bar-item w3-button" style="font-size: max(min(1.5vw,4em)"><i class="fa fa-user"></i> EQUIPE</a>
+	  <a href="#estatisticas" class="w3-bar-item w3-button" style="font-size: max(min(1.5vw,4em)"><i class="fa fa-bar-chart"></i> ESTATISTICAS</a>
+	  <a href="#corpo" class="w3-bar-item w3-button" style="font-size: max(min(1.5vw,4em)"><i class="	fa fa-graduation-cap"></i> CORPO ACADÊMICO</a>
+	  <a href="#videos" class="w3-bar-item w3-button" style="font-size: max(min(1.5vw,4em)"><i class="fa fa-file-video-o"></i> VÍDEOS</a>
+      
       <!-- 
 	  <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTATO</a>-->
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars" style="font-size:48px"></i>
     </a>
   </div>
 </div>
@@ -122,20 +126,21 @@ body, html {
 
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" class="w3-bar-item w3-button" style="font-size: max(min(2vw,1em)"><i class="fa fa-users"></i>SOBRE A BRAIN TEAM</a>
-      <a href="#team" class="w3-bar-item w3-button" style="font-size: max(min(2vw,1em)"><i class="fa fa-user"></i> EQUIPE</a>
-	   <a href="#estatisticas" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-bar-chart"></i> ESTATISTICAS</a>
-	  <a href="#corpo" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="	fa fa-graduation-cap"></i> CORPO ACADÊMICO</a>
-	  <a href="#videos" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-file-video-o"></i> VÍDEOS</a>
-      <a href="#work" class="w3-bar-item w3-button"style="font-size: max(min(2vw,1em)"><i class="fa fa-th"></i> WORK</a>
-  
+  <a href="#about" class="w3-bar-item w3-button" style="font-size: max(min(4vw,3em)"><i class="fa fa-users"></i>SOBRE A BRAIN TEAM</a>
+      <a href="#team" class="w3-bar-item w3-button" style="font-size: max(min(4vw,3em)"><i class="fa fa-user"></i> EQUIPE</a>
+	   <a href="#estatisticas" class="w3-bar-item w3-button"style="font-size: max(min(4vw,3em)"><i class="fa fa-bar-chart"></i> ESTATISTICAS</a>
+	  <a href="#corpo" class="w3-bar-item w3-button"style="font-size: max(min(4vw,3em)"><i class="	fa fa-graduation-cap"></i> CORPO ACADÊMICO</a>
+	  <a href="#videos" class="w3-bar-item w3-button"style="font-size: max(min(4vw,3em)"><i class="fa fa-file-video-o"></i> VÍDEOS</a>
+     
 </nav>
 
+
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container w3-grayscale-min " id="home">
+
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span style="font-size: max(min(4vw, 4em)" >Equipe Oficial de E-Sports da Universidade FUMEC</span><br>
-    <p class="w3-large">Em busca dos mais altos padrões de competitividade nos E-Sports desde 2016</p>
+    <span style="font-size: max(min(4vw, 4em) " >Equipe Oficial de E-Sports da Universidade FUMEC</span><br>
+    <p class="w3-large">Venha se profissionalizar na FUMEC e participe de na nossa equipe de E-Sports!</p>
 	
    <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p> -->
   </div> 
@@ -152,7 +157,7 @@ body, html {
 
 <!-- About Section -->
 <hr>
-<div class="w3-container" style="padding:0px 16px" id="about">
+<div class="w3-container" style="padding:0px 16px display:block" id="about">
   <h3 class="w3-center w3-light-grey">SOBRE A BRAIN TEAM</h3>
   <p class="w3-center w3-large">Principais características da nossa equipe</p><hr>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -201,7 +206,7 @@ body, html {
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>Nossas habilidades</h3>
-      <p>Podcasts com dicas de jogadas brutais!<br>
+      <p>Podcasts com análises de jogadas brutais!<br>
       Streaming de partidas todas as semanas...</p>
       <p>Estamos presentes, prontos e atuantes.</p>
     </div>
@@ -245,6 +250,7 @@ body, html {
 			</center>	
 		</div>
 	</div>
+	
 <div class="w3-center">
   <div class="w3-section">
     <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
@@ -268,74 +274,93 @@ body, html {
     
 	<div class="w3-col m4 w3-center">
       <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Marcos" >
+        <img src="/w3images/team1.jpg" alt="Danas" >
         <div class="w3-container w3-border w3-padding  m4 l3">
           <h3>Daniel de Souza Filho, "Danas"</h3>
           <p class="w3-opacity">Capitão da Equipe e ADC matador!</p>
-          <p>Aluno do Curso de Computação Gráfica, lidera a equipe em ação! Campeão do "1ºCampeonato de League of Legends da FACE/FUMEC 2023"</p>
+          <p>Aluno do Curso de Computação Gráfica, lidera a equipe em ação! Campeão do "1ºCampeonato de League of Legends da FACE/FUMEC 2023. Campeão da LUE Summer Cup 2017 - Liga Universitária de e-Sports. Medalha de Bronze no Desafio Campus Party Belo Horizonte 2016"</p>
 		  <font face = "Arial" size = "8" color = "red">Active</font><br />
-          <img src="LOL-RANKED.png" alt="Marcos" style="width:20%">
+          <img src="LOL-RANKED.png" alt="Ranked" style="width:20%">
 		  <a href="https://www.op.gg/summoners/br/Danas" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG" >Stats no OP.GG</a>  
 		  </div>
       </div>
     </div>
+	    
 	<div class="w3-col m4 w3-center">
       <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Mike" >
-        <div class="w3-container w3-border w3-padding  m4 l3">
-          <h3>André Barroso Rocha, "Ice Tea"</h3>
-          <p class="w3-opacity">Top Laner sem coração!</p>
-          <p>Aluno do Curso de Ciência da Computação. Duro feito pedra!</p>
-		   <font face = "octin spraypaint a rg"  src="url(octin spraypaint a rg.otf)" size = "8" color = "red">MIA- Missing in Action</font><br />
-          <img src="LOL-RANKED.png" alt="Marcos" style="width:20%">
-		  <a href="https://www.op.gg/summoners/br/Ice Tea" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
-		  </div>
-        </div>
-      </div>
-    <div class="w3-col m4 w3-center">
-      <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Dan" >
-        <div class="w3-container w3-border w3-padding  m4 l3">
-          <h3>RAFAEL COLEPÍCOLO GAMA, "Huy"</h3>
-          <p class="w3-opacity">Mid Lane pulverizer!</p>
-          <p>Aluno da Ciência da Computação. Aparece quando menos se espera!</p>
-		  <font face = "Arial" size = "8" color = "red">Active</font><br />
-          <img src="LOL-RANKED.png" alt="Marcos" style="width:20%">
-		  <a href="https://www.op.gg/summoners/br/huy" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
-		  </div>
-        </div>
-      </div>
-    <div class="w3-col m4 w3-center">
-      <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Dan">
-        <div class="w3-container w3-border w3-padding  m4 l3">
-          <h3>ERICK ELOY DOS SANTOS CRUZ, "Chrollo"</h3>
-          <p class="w3-opacity">Jungler destruído!</p>
-          <p>Aluno da Ciência da Computação. Os creeps fogem quando ele chega!</p>   
-			<font face = "Arial" size = "8" color = "red">Active</font><br />		  
-		 <img src="LOL-RANKED.png" alt="Marcos"  style="width:20%" >
-		  <a href="https://www.op.gg/summoners/br/Chrollo" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
-        </div>
-      </div>
-    </div>
-	<div class="w3-col m4 w3-center">
-      <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Dan" >
+        <img src="/w3images/team4.jpg" alt="Julio" >
         <div class="w3-container w3-border w3-padding  m4 l3">
           <h3>JÚLIO NATAN COUTO NOGUEIRA, "Banana Segredin"</h3>
           <p class="w3-opacity">Suporte salvador!</p>
           <p>Aluno de Jogos Digitais. Mantêm a moral da equipe! Campeão do "1ºCampeonato de League of Legends da FACE/FUMEC 2023"</p>
 			<font face = "Arial" size = "8" color = "red">Active</font><br />
-          <img src="LOL-RANKED.png" alt="Marcos" style="width:20%">
+          <img src="LOL-RANKED.png" alt="Ranked" style="width:20%">
 		  <a href="https://www.op.gg/summoners/br/Banana%20Segredin" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
 		  </div>
         </div>
       </div>
+  
+	
+	<div class="w3-col m4 w3-center">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Brunno" >
+        <div class="w3-container w3-border w3-padding  m4 l3">
+          <h3>Brunno, "Asher"</h3>
+          <p class="w3-opacity">Top Laner brutal!</p>
+          <p>Aluno de Ciência da Computação. Campeão do "1ºCampeonato de League of Legends da FACE/FUMEC 2023"</p>
+			<font face = "Arial" size = "8" color = "red">Active</font><br />
+          <img src="LOL-RANKED.png" alt="Ranked" style="width:20%">
+		  <a href="https://www.op.gg/summoners/br/Banana%20Segredin" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
+		  </div>
+        </div>
+      </div>
+
+		
+    <div class="w3-col m4 w3-center">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Rafael" >
+        <div class="w3-container w3-border w3-padding  m4 l3">
+          <h3>RAFAEL COLEPÍCOLO GAMA, "Huy"</h3>
+          <p class="w3-opacity">Mid Lane pulverizer!</p>
+          <p>Aluno da Ciência da Computação. Aparece quando menos se espera!</p>
+		  <font face = "Arial" size = "8" color = "red">Active</font><br />
+          <img src="LOL-RANKED.png" alt="Ranked" style="width:20%">
+		  <a href="https://www.op.gg/summoners/br/huy" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
+		  </div>
+        </div>
+      </div>
+	
+	<div class="w3-col m4 w3-center">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Andre" >
+        <div class="w3-container w3-border w3-padding  m4 l3">
+          <h3>André Barroso Rocha, "Ice Tea"</h3>
+          <p class="w3-opacity">Top Laner sem coração!</p>
+          <p>Aluno do Curso de Ciência da Computação. Duro feito pedra!</p>
+		   <font face = "octin spraypaint a rg"  src="url(octin spraypaint a rg.otf)" size = "8" color = "red">MIA- Missing in Action</font><br />
+          <img src="LOL-RANKED.png" alt="Ranked" style="width:20%">
+		  <a href="https://www.op.gg/summoners/br/Ice Tea" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
+		  </div>
+        </div>
+      </div>
+	 
+<div class="w3-col m4 w3-center">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Erik">
+        <div class="w3-container w3-border w3-padding  m4 l3">
+          <h3>ERICK ELOY DOS SANTOS CRUZ, "Chrollo"</h3>
+          <p class="w3-opacity">Jungler destruído!</p>
+          <p>Aluno da Ciência da Computação. Os creeps fogem quando ele chega!</p>   
+			<font face = "Arial" size = "8" color = "red">MIA- Missing in Action</font><br />		  
+		 <img src="LOL-RANKED.png" alt="Ranked"  style="width:20%" >
+		  <a href="https://www.op.gg/summoners/br/Chrollo" class="w3-button w3-light-grey w3-hover-red w3-block" target="_blank" title="Go to OP.GG">Stats no OP.GG</a>  
+        </div>
+      </div>
     </div>
 	
+		</div>
 	</div>
-  </div>
-</div>
+  
 
 <!-- Coordination Section -->
 <div class="w3-container" style="padding:32px 16px" id="corpo">
@@ -582,7 +607,7 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64">
 
 	<p>Campus Cruzeiro (FACE, FCH, FEA e Pós-graduação)	Rua Cobre, 200, bairro Cruzeiro -> Ônibus: 104 1170 2152 4103 4108 5101 </p>
-	<a href="#home" class="w3-bar-item w3-button w3-wide">Central de Atendimento FUMEC: 0800 0300 200 (atendimento de segunda a sexta-feira, das 9h às 19h)</a>
+	<p>Central de Atendimento FUMEC: 0800 0300 200 (atendimento de segunda a sexta-feira, das 9h às 19h)</p>
     
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Voltar ao topo</a>
   <div class="w3-xxlarge w3-section">
